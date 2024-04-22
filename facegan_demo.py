@@ -69,4 +69,4 @@ output = tf.cast(output, tf.uint8).numpy()
 
 for f,out_img in zip(files, output):
     out_img = cv2.cvtColor(out_img, cv2.COLOR_RGB2BGR)
-    cv2.imwrite('out/'+f, out_img)
+    cv2.imwrite('output/'+f, out_img)
